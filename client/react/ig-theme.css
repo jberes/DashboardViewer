@@ -1,0 +1,19 @@
+:root {
+    --ig-font-family: 'Titillium Web', sans-serif;
+}
+
+/* align icons in their containers */
+.material-icons, .imx-icon {
+  vertical-align: middle;
+}
+
+.ig-typography h1,
+.ig-typography h2,
+.ig-typography h3,
+.ig-typography h4,
+.ig-typography h5,
+.ig-typography h6,
+.ig-typography p,
+.ig-typography__body-1 {
+    margin: 0 !important;
+}
