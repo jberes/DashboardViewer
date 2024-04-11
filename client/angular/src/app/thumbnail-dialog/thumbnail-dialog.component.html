@@ -1,0 +1,16 @@
+<ui-dialog #dialog title="Available Dashboards" class="list-dialog">
+  <igx-list class="list" style="max-height: 500px; padding: -20px;">
+    <igx-list-item [isHeader]="false" *ngFor="let dashboard of dashboards" (click)="selectDashboard(dashboard)">
+      <span igxListThumbnail>
+        <igx-card-media height="55px" width="100px">
+          <app-dashboard-thumbnail [dashboardId]="dashboard.dashboardFileName" />
+        </igx-card-media>
+      </span>
+      <span igxListLineTitle>{{ dashboard.dashboardTitle }}</span>
+      <span igxListLineSubTitle>{{ dashboard.dateModified }}</span>
+    </igx-list-item>
+  </igx-list>
+  <div slot="footer">
+    <button class="rv-button" (click)="dialog.close('cancel')">Cancel</button>
+  </div>
+</ui-dialog>

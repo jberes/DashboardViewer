@@ -1,0 +1,32 @@
+ 
+ <div class="column-layout group">
+
+  <igx-list class="list" style="background-color: black;">
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar src="https://users.infragistics.com/reveal/images/faces/MiriamGraham.jpg" size="large" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Miriam Graham</span>
+      <span igxListLineSubTitle>SVP Technology</span>
+      <span igxListAction>
+        <igx-icon class="icon">
+          keyboard_arrow_down
+        </igx-icon>
+      </span>
+    </igx-list-item>
+
+    <igx-list-item [isHeader]="false" routerLink="/dashboards">
+      <span igxListThumbnail>
+        <igx-avatar src="/assets/Acme_Sales_Icon_Small.svg" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>My Dashboards</span>
+    </igx-list-item>
+  </igx-list>
+  <div class="column-layout group_1">
+    <!-- <img src="/assets/Acme_Logo.svg" class="image" /> -->
+  </div>
+  </div>
+
+  <div class="view-container">
+  <router-outlet></router-outlet>
+</div>

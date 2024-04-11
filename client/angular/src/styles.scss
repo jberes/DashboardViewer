@@ -1,0 +1,176 @@
+// /* You can add global styles to this file, and also import other style files */
+
+// // Standard CSS normalize, comment out if not required or using a different module
+// @use "minireset.css/minireset";
+// @use "igniteui-angular/theming" as *;
+// @use "@revealbi/ui/themes/light.css";
+
+// @include core();
+// @include typography($font-family: "Montserrat");
+
+
+// $custom-palette: palette(
+//   $primary: #2697D5,
+//   $secondary: #FFC72C,
+//   $surface: white,
+//   $error: #e74564,
+//   $success: #3CB76E,
+//   $warn: #EEA420,
+//   $info: #63CDF6);
+// @include theme($palette: $custom-palette, $elevation: false, $roundness: 0);
+
+// :root {
+//   /* surface is set to white, i.e. ligthness 100% */
+//   --ig-surface-h: 0deg;
+//   --ig-surface-s: 0%;
+//   --ig-surface-l: 100%;
+//   --ig-surface-a: 1;
+//   --ig-gray-h: 0deg;
+
+//   --igx-grid-content-background: white;
+//   --igx-grid-content-text-color: black;
+//   --igx-grid-row-odd-background: white;
+//   --igx-grid-row-even-background: white;
+//   --igx-grid-row-hover-background: #f0f0f0;
+//   --igx-grid-row-selected-background: #f0f0f0;
+//   --igx-grid-header-background: white;
+
+
+//   /* grays are based on black to contrast the surface color */
+//   // --ig-gray-h: 0%;
+//   // --ig-gray-s: 0%;
+//   // --ig-gray-900: var(--ig-gray-h), var(--ig-gray-s), 13%;
+// }  
+
+// // // Define your custom theme
+// // $custom-grid-theme: igx-grid-theme(
+// //   $row-selected-background: green,
+// //   $row-selected-text-color: #000,
+// //   $row-selected-hover-background: red
+// // );
+
+// // // Apply the theme using ::ng-deep to penetrate the view encapsulation
+// // ::ng-deep {
+// //   @include igx-grid($custom-grid-theme);
+// // }
+
+// //theme.chartColors = ["#73C2FB", "#2980B9", "#525252", "#E67E22", "#F39C12"];
+
+
+
+// body {
+//   background: hsla(var(--ig-surface-500));
+//   color: var(--ig-surface-500-contrast);
+// }
+
+// html, body {
+//   height: 100%;
+//   --rv-font-family: var(--ig-font-family);
+//   --rv-border-radius-large: 0px;
+// }
+
+// .ig-typography {
+//   h1, h2, h3, h4, h5, h6, p, .ig-typography__body-1 {
+//     margin: 0;
+//   }
+// }
+
+// .outer-wrapper > *:not(router-outlet) {
+//   width: 100%;
+// }
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+// .rv-button  {
+//   border-radius: 0px;
+// }
+ 
+// .rv-button-cancel  {
+//   border-radius: 0px;
+// }
+
+
+/* You can add global styles to this file, and also import other style files */
+
+// Standard CSS normalize, comment out if not required or using a different module
+@use "minireset.css/minireset";
+@use "igniteui-angular/theming" as *;
+@use "@revealbi/ui/themes/light.css";
+
+@include core();
+@include typography($font-family: "Roboto Condensed");
+
+$custom-palette: palette(
+  $primary: #363636,
+  $secondary: #CE1141,
+  $surface: #fff,
+  $error: #EB6486,
+  $success: #2CA278,
+  $warn: #F17A41,
+  $info: #7F7F7F);
+@include theme($palette: $custom-palette, $elevation: false, $roundness: 0);
+
+:root {
+  /* surface is set to white, i.e. ligthness 100% */
+  --ig-surface-h: 0deg;
+  --ig-surface-s: 0%;
+  --ig-surface-l: 100%;
+  --ig-surface-a: 1;
+  --ig-gray-h: 0deg;
+
+  /* grays are based on black to contrast the surface color */
+  // --ig-gray-h: 0%;
+  // --ig-gray-s: 0%;
+  // --ig-gray-900: var(--ig-gray-h), var(--ig-gray-s), 13%;
+}  
+
+// // Define your custom theme
+// $custom-grid-theme: igx-grid-theme(
+//   $row-selected-background: green,
+//   $row-selected-text-color: #000,
+//   $row-selected-hover-background: red
+// );
+
+// // Apply the theme using ::ng-deep to penetrate the view encapsulation
+// ::ng-deep {
+//   @include igx-grid($custom-grid-theme);
+// }
+
+//theme.chartColors = ["#73C2FB", "#2980B9", "#525252", "#E67E22", "#F39C12"];
+
+
+
+body {
+  background: hsla(var(--ig-surface-500));
+  color: var(--ig-surface-500-contrast);
+}
+
+html, body {
+  height: 100%;
+  --rv-font-family: var(--ig-font-family);
+  --rv-border-radius-large: 0px;
+}
+
+.ig-typography {
+  h1, h2, h3, h4, h5, h6, p, .ig-typography__body-1 {
+    margin: 0;
+  }
+}
+
+.outer-wrapper > *:not(router-outlet) {
+  width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.rv-button  {
+  border-radius: 0px;
+}
+ 
+.rv-button-cancel  {
+  border-radius: 0px;
+}
