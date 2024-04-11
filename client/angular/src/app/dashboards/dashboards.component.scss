@@ -1,0 +1,173 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+::ng-deep ui-dialog rv-dialog::part(content) {
+  min-height:100px;
+}
+
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  background-color: hsla(var(--ig-gray-100));
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  //gap: 16px;
+  position: relative;
+  padding: 16px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_2 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 24px;
+}
+.group_3 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+}
+.group_4 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+}
+.group_5 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+}
+.group_6 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: auto;
+  position: relative;
+  width: 357px;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 357px;
+}
+.group_8 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 5px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.h6 {
+  color: hsla(var(--ig-gray-800));
+  height: max-content;
+  min-width: min-content;
+}
+.avatar {
+  --igx-avatar-background: transparent;
+}
+.icon {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.button {
+  height: max-content;
+  flex-shrink: 0;
+}
+.button_1 {
+  --igx-button-foreground: hsla(var(--ig-gray-900));
+  height: max-content;
+  flex-shrink: 0;
+}
+.list {
+  height: max-content;
+}
+.reveal-dash-board {
+  margin: 0 0 0 6px;
+  min-width: 400px;
+  min-height: 200px;
+  flex-grow: 1;
+  flex-basis: 0;
+  position: relative;
+}
+.selected {
+  background-color:#E0E0E0;
+}
+
+.toggle-group7-btn {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.toggle-group7-btn:hover {
+  background-color:#fae7b1; 
+}
+
+.hamburger-menu {
+  display: block;
+  width: 25px; 
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 100%;
+  height: 1.5px; 
+  background-color: #333; 
+  margin: 4px 0; 
+  transition: 0.3s;
+}
+
+.hamburger-menu:hover .bar {
+  background-color: #666;
+}
